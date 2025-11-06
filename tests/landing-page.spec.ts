@@ -24,7 +24,7 @@ test.describe("Landing Page 測試", () => {
   test("應該顯示 Hero 區塊內容", async ({ page }) => {
     const heroTitle = page.getByTestId("hero-title");
     await expect(heroTitle).toBeVisible();
-    await expect(heroTitle).toHaveText("打造你的夢想產品1");
+    await expect(heroTitle).toHaveText("打造你的夢想產品");
 
     const heroSubtitle = page.getByTestId("hero-subtitle");
     await expect(heroSubtitle).toBeVisible();
